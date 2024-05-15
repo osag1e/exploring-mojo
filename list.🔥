@@ -1,0 +1,14 @@
+from collections import List
+
+fn main():
+    var list = List(3, 4, 5)
+    list.append(7)
+    list.append(11)
+
+    print(list[0], list[1], list[2], list[3], list[4])
+    print("Popping first item from list:", list.pop(0))
+
+    for i in range(len(list[:])):
+        print(list[i], end=", ")
+
+    
