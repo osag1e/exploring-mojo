@@ -20,7 +20,7 @@ fn exponent(x: Float16, y: Int = 2) -> Float16:
 fn modulus(x: Float16, y: Float16) -> Float16:
     return x % y
 
-var values = 5
+var values: Int = 5
 
 fn sum(*values: Int) -> Int:
     var sum: Int = 2
@@ -44,12 +44,6 @@ struct MyPair:
         return self.first + self.second
 
 
-var s: String = "Testing"
-
-var z = str("Items in list: ") + 7
-        # or
-var zs = String("Items in list: ") + 11
-
 var conditionA = False 
 var conditionB: Bool = True
 
@@ -57,13 +51,13 @@ fn main():
     var name = "Everyone"
     print(greet(name))
 
-    var num1 = (1.0)
-    var num2 = (2.0)
+    var num1 = Float16(1.0)
+    var num2 = Float16(2.0)
     print(add(num1, num2))
     print(subtract(num2, num1))
 
-    var num3 = (9.0)
-    var num4 = (3.0)
+    var num3 = Float16(9.0)
+    var num4 = Float16(3.0)
     print(divide(num3, num4))
     print(multiply(num4, num3))
 
@@ -81,12 +75,10 @@ fn main():
     print(mine.second)
     print("The sum of MyPair is", mine.get_sum())
 
-    print(z)
-    print(zs)
-
     conditionB = not conditionA
     print(conditionA, conditionB)
 
-    print(str("Strings play nicely with others: ") + True)
+    print(String("Strings play nicely with others: ") + Int(11))
+    print(str("Strings play nicely with other types: ") + Bool(True))
 
 

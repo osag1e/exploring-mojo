@@ -1,7 +1,7 @@
 from collections import List
 
 fn main():
-    var list = List(3, 4, 5)
+    var list = List[Int](3, 4, 5)
     list.append(7)
     list.append(11)
 
