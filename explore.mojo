@@ -44,6 +44,14 @@ struct MyPair:
         return self.first + self.second
 
 
+var s: String = "Testing"
+
+var z = str("Items in list: ") + 7
+        # or
+var zs = String("Items in list: ") + 11
+
+var conditionA = False 
+var conditionB: Bool = True
 
 fn main():
     var name = "Everyone"
@@ -72,4 +80,13 @@ fn main():
     print(mine.first)
     print(mine.second)
     print("The sum of MyPair is", mine.get_sum())
+
+    print(z)
+    print(zs)
+
+    conditionB = not conditionA
+    print(conditionA, conditionB)
+
+    print(str("Strings play nicely with others: ") + True)
+
 
